@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - ex10.1</title>
+    <style>
+        div#area{
+            background-color: rgb(139, 135, 135);
+            color: white;
+            font: normal 18pt time new roman;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: red;
+        }
+        body{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício 10.1</h1>
+    <h2>Eventos DOM - Função Clicar</h2>
+    <h3>Criando uma Div Área</h3>
+    <div id="area" onclick="clicar()" >Interaja...</div>
+    <script>
+        function clicar(){
+            var a = window.document.getElementById('area')
+            a.innerText= 'Clicou'
+            a.style.background='blue'
+            a.style.color='white'
+        }
+    </script>
+</body>
+</html>

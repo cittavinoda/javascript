@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.1</title>
+</head>
+<body>
+    <h1>Aula 11.1</h1>
+    <h2>Mostrando Dados na Tela</h2>
+    <style>
+        body{
+            background-color: coral;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+    <script>
+        var velocidade = 70
+        var atenção = 'cuidado'
+        var segurança = 'cinto de segurança' 
+        document.write(`A velocidade do seu carro é de ${velocidade} Km/h<br/>`)
+        document.write(`Dirija com ${atenção.toLocaleUpperCase()}! <br/>Use sempre o ${segurança.toLocaleUpperCase()}!`)
+    </script>
+</body>
+</html>

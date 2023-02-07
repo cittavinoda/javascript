@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.6</title>
+</head>
+<body>
+    <h1>Exercício 11.6</h1>
+    <hr>
+    <h2>Condição Composta if else-if else</h2>
+    <h3>Você Pode Dirigir?</h3>
+    
+    <script>
+        var idade = 24
+        var habilitação = false
+        if(idade < 18){
+            document.write(`<strong>Você tem ${idade} anos.<br>`)
+            document.write('Você é menor de idade.<br>')
+            document.write('Você não pode dirigir.</strong>')
+        }else if(idade >=  18 && habilitação == false){
+            document.write(`<strong>Você tem ${idade} anos.<br/>`)
+            document.write('Você é maior de idade, mas não está habilitado.<br/>')
+            document.write('Você pode tirar a sua habilitação.<br/>')
+            document.write('Você não pode dirigir.</strong>')
+        }else if (idade >= 18 && habilitação == true){
+            document.write(`<strong>Você tem ${idade} anos<br/>`)
+            document.write('Você é maior de idade e está habilitado. <br/>')
+            document.write('Você pode dirigir.</strong>')
+        }
+    </script>
+    <style>
+        body{
+            background-color: greenyellow;
+            font: normal 15pt time new roman;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: red;
+            background-color: white;
+        }
+    
+    </style>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - ex12.1.1</title>
+</head>
+<body>
+    <h1>Exercício 12.1.1</h1>
+    <hr>
+    <h2>Condição Composta (if else)</h2>
+    <hr>
+    <h3>Maior ou Menor de Idade</h3>
+    <input type="number" name="txtid" id="txtid">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var id = window.document.getElementById('txtid')
+            var res = window.document.getElementById('res')
+            var idade = Number(id.value)
+            res.innerHTML=`A sua idade é ${idade} anos.<br>`
+            if(idade < 18){
+                res.innerHTML+=('Você é menor de idade.')
+            }else{
+                res.innerHTML+=('Você é maior de idade.')
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color:crimson 
+        }
+        div#res{
+            margin-top: 20px;
+            background-color: blueviolet;
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 2px 2px 3px blue;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            text-shadow: 2px 2px 3px yellow;
+        }
+        input{
+            width: 70px;
+        }
+    </style>
+</body>
+</html>

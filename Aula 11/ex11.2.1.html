@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11.2.1 - ex11.2.1</title>
+</head>
+<body>
+    <h1>Exercício 11.2.1</h1>
+    <h2>Condição Simples - if - com Interação</h2>
+    <h3>Radar - Velocidade do Veículo:</h3><input type="number" name="veloc" id="veloc">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+        var velocidade = document.querySelector('input#veloc')
+        var res = document.querySelector('div#res')
+        var vel = Number(velocidade.value)
+        res.innerHTML=`<br/>Você estava dirigindo a velocidade de ${vel} Km/h<br/>`
+        if(vel > 80){
+            res.innerHTML+= 'Você estava acima da velocidade máxima permitida.<br/>'
+            res.innerHTML+= 'Você foi MULTADO!<br/>'
+        }else{
+            res.innerHTML='<br/>BOA VIAJEM!'
+        }
+        }
+    </script>
+    <p>Dirija com CUIDADO!<br/> Use sempre o CINTO DE SEGURANÇA!</p>
+    <style>
+        input{
+            width: 70px;
+        }
+        body{
+            background-color: blue
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            background-color: aquamarine;
+            color: red;
+        }
+        p{
+            font: normal 18pt time new roman;
+            text-align: center;
+        }
+        div#res{
+            font: normal 15pt time new roman;
+            color: white;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.8</title>
+</head>
+<style>
+    body{
+        background-color: darkred;
+        color: white;
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+    h2{
+        text-align: center;
+        color: white;
+    }
+    h3{
+        text-align: center;
+        background: rgb(18, 128, 27);
+    }
+    Input{
+        width: 100px;
+    }
+
+</style>
+<body>
+    <h1>Exercício 11.8</h1>
+    <h2>Condição Simples</h2>
+    <h3>DETRAN</h3>
+    <h3>SISTEMA DE MULTAS</h3>
+    Velocidade do Carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <P></P>
+    <div id="res"></div>
+
+    <script>
+        function calcular(){
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML=`A velocidade do seu carro é: <strong>${vel} Km/h </strong><br/> <p></p>`
+            if(vel <= 80){
+                res.innerHTML+= 'Boa viajem! Use sempre o CINTO DE SEGURANÇA!'
+            } else if(vel > 80 ){
+                res.innerHTML+= 'Você etá acima da velocidade máxima permitida. <br> <p></p>'
+                res.innerHTML+= 'Você foi <strong>MULTADO!</strong>'
+            }
+        }
+    </script>
+</body>
+</html>

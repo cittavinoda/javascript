@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.1.1</title>
+</head>
+<body>
+    <h1>Exercício 11.1.1</h1>
+    <h2>Mostrando Dados na Tela com Interação</h2>
+    <p>Radar - Velocidade do veículo:</p><input type="number" name="veloc" id="veloc">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <style>
+        body{
+            background-color: gold;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            background-color: aquamarine;
+        }
+        p{
+            font: normal 18pt teime new roman;
+        }
+    </style>
+    <script>
+        function verificar(){
+            var velocidade = document.querySelector('input#veloc')
+            var res = document.querySelector('div#res')
+            var Vel = Number(velocidade.value)
+            var atenção = 'cuidado'
+            var segurança = 'cinto de segurança'
+            res.innerHTML=`Você estava a velocidade de ${Vel} Km/h.<br/>`
+            res.innerHTML+=`Dirija com <strong>${atenção.toUpperCase()}!</strong><br/>
+            Use sempre o <strong>${segurança.toUpperCase()}!<strong><br/>`
+                res.innerHTML+='TENHA UMA BOA VIAJEM!' 
+        }
+    </script>
+</body>
+</html>

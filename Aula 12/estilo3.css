@@ -1,0 +1,23 @@
+body{
+    background-color: burlywood;
+    font: normal 15pt time new roman;
+}
+header{
+    text-align: center;
+}
+section{
+    background: yellowgreen;
+    color: blue;
+    border-radius: 30px;
+    padding: 15px;
+    width: 615px;
+    margin: auto;
+    box-shadow: 5px 5px 10px blue;
+}
+div{
+    padding: 8px;
+}footer{
+    color: blue;
+    text-align: center;
+    font-style: italic;
+}

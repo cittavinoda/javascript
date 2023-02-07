@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - ex9.5</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            color: brown;
+        }
+    </style>
+    <h1>Exercício 9.5</h1>
+    <h2>Introdução ao DOM</h2>
+    <h2>Seleção de Elementos</h2>
+    <h3>Seleção de Elemento por Marca</h3>
+    <h3>getElementByTagName</h3>
+    <P>Estudando DOM.</P>
+    <p>Selecionando Elementos Pelo Js</p>
+    
+    <p>Caso 1</p>
+    <script>
+        var corpo =window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+        corpo.style.background = 'green'
+        p1.style.color = 'black'
+        p1.style.background = 'purple'
+    </script>
+    <p>Caso 2</p>
+    <script>
+        var corpo =window.document.body
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p2.innerText)
+        corpo.style.background = 'green'
+        p2.style.color = 'black'
+        p2.style.background = 'yellow'
+    </script>
+</body>
+</html>

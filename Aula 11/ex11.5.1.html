@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.5.1</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            background: yellow;
+        }
+        p{
+            font: normal 15pt time new roman;
+            color: white;
+        }
+        body{
+            background: red;
+        }
+        input{
+            width: 70px;
+        }
+        div#res{
+            font: normal 15pt time new roman;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício 11.2</h1>
+    <h2>Condição Composta - if else</h2>
+    <h3>Maior ou Menor de Idade</h3>
+    <p><strong>Digite a sua idade:</strong></p> <input type="number" name="txtIdade" id="txtIdade">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var txtId = window.document.querySelector('input#txtIdade')
+            var res = window.document.querySelector('div#res')
+            var Idade = Number(txtId.value)
+            res.innerHTML=`Você tem ${Idade} anos.<br/>`
+            if(Idade < 18){
+                res.innerHTML+=`Você é menor de idade.`
+            }else{
+                res.innerHTML+=`Você é maior de idade.`
+            }
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 - ex8.2</title>
+</head>
+<body>
+    <h1>Exercício 8.2</h1>
+    <h2>Operadores JavaScript - Parte 2</h2>
+    <p>Os operadores em JavaScript são:
+        Aritméticos;
+        Atribuição;
+        <strong>Relacionais</strong>;
+        Lógico;
+        Ternário.
+    </p>
+    <style>
+        body{
+            background-color: rgb(17, 4, 82);
+            color: rgb(243, 221, 24);
+        }
+    </style>
+    
+    <h3>Operadores Relacionais de Identidade</h3>
+    (==) igual; (!=) diferente; (===) igual restrito; (!==) desigual restrito
+    <p>Caso 1</p>
+    <script>
+        var x = 5; document.write('var x = 5 <br/>')
+        var y = 5; document.write('var y = 5 <br/>')
+        c = x == y; document.write(`c = x == y : ${c} <br/>`)
+        c1 = x != y; document.write(`c1 = x != y : ${c1} <br/>`)
+    </script>
+    <p>Caso 2</p>
+    <script>
+        var x = 5; document.write('var x = 5 <br/>')
+        var y = '5'; document.write('var y = "5" <br/>')
+        c = x == y; document.write(`c = x == y : ${c} <br/>`)
+        c1 = x != y; document.write(`c1 = x != y : ${c1} <br/>`)
+    </script>
+    <p>Caso 3</p>
+    <script>
+        var x = 5; document.write('var x = 5 <br/>')
+        var y = 5; document.write('var y = 5 <br/>')
+        c = x === y; document.write(`c = x === y : ${c} <br/>`)
+        c1 = x !== y; document.write(`c1 = x !== y : ${c1} <br/>`)
+    </script>
+    <p>Caso 4</p>
+    <script>
+        var x = 5; document.write('var x = 5 <br/>')
+        var y = '5'; document.write('var y = "5" <br/>')
+        c = x === y; document.write(`c = x === y : ${c} <br/>`)
+        c1 = x !== y; document.write(`c1 = x !== y : ${c1} <br/>`)
+    </script>
+    
+</body>
+</html>

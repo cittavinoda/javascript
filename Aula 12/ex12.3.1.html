@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - ex3.1</title>
+</head>
+<body>
+    <h1>Exercício 12.3.1</h1>
+    <hr>
+    <h2>Condição Composta (if else-if else)</h2>
+    <h3>Hora do Dia.</h3>
+    <p></p>
+    <p>Que horas são agora?</p><input type="number" name="txth" id="txth">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var hr = document.querySelector('input#txth')
+            var res = document.querySelector('div#res')
+            var hora = Number(hr.value)
+            res.innerHTML=`São exatamente ${hora} horas <br>`
+
+            if(hora > 0 && hora < 5){
+                res.innerHTML+=('Boa madrugada!')
+            }else if (hora <= 12){
+                res.innerHTML+='Bom dia!'
+            }else if (hora <= 18){
+                res.innerHTML+='Boa tarde!'
+            }else{
+                res.innerHTML+='Boa noite!'
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: burlywood;
+            font-size: 15pt;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: red;
+        }
+        h3{
+            text-align: center;
+            color: green;
+        }
+        input{
+            width: 70px;
+        }
+    </style>
+</body>
+</html>

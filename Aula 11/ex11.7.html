@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.7</title>
+</head>
+<body>
+    <h1>Exercício 11.7</h1>
+    <hr>
+    <h2>Consultando Horas</h2>
+    <hr>
+    <script>
+        var agora = new Date()
+        var horas = agora.getHours()
+        document.write(`São exatamente ${horas} horas.<br>`)
+        if(horas < 12){
+            document.write('Bom dia!')
+        }else if(horas <= 18){
+            document.write('Boa tarde!')
+        }else{
+            document.write('Boa noite!')
+        }
+    </script>
+    <style>
+        body{
+            background-color: steelblue;
+            font: normal 15pt time new roman;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</body>
+</html>

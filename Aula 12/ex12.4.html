@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - ex11.4</title>
+</head>
+<body>
+    <h1>Exercício 12.4</h1>
+    <hr>
+    <h2>Whitch Case</h2>
+    <hr>
+    <h3>Dia da Semana</h3>
+
+    <script>
+        var agora = new Date ()
+        var diaSem = agora.getDay()
+        switch(diaSem){
+            case 0:
+                document.write('Domingo')
+                break
+            case 1:
+                document.write('Segunda')
+                break
+            case 2:
+                document.write('Terça')
+                break
+            case 3: 
+                document.write('Quarta')
+                break
+            case 4:
+                document.write('Quinta')
+                break
+            case 5:
+                document.write('Sexta')
+                break
+            case 6:
+                document.write('Sábado')
+                break
+            defout:
+                document.write('ERROR')
+        }
+    </script>
+    <style>
+        body{
+            background-color: darkturquoise;
+            font: normal 15pt time new roman;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+        h2{
+            text-align: center;
+            background: black;
+            color: white;
+        }
+        h3{
+            color: yellow;
+            text-shadow: 2px 2px 28px rgb(0, 0, 255);
+        }
+    </style>
+</body>
+</html>

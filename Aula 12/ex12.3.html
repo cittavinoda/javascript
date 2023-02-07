@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - ex12.3</title>
+</head>
+<body>
+    <h1>Exercício 12.3</h1>
+    <hr>
+    <h2>Condição Composta (if else-if else)</h2>
+    <h3>A Hora do Dia.</h3>
+
+    <script>
+        var hora = 19
+        document.write(`São exatamente ${hora} horas.<br>`)
+        if(hora >0 && hora < 5){
+            document.write('Boa Madrugada!')
+        }else if (hora <12){
+            document.write('Bom dia!')
+        }else if (hora <= 18){
+            document.write('Boa tarde!')
+        }else{
+            document.write('Boa noite!')
+        }
+    </script>
+    <style>
+        body{
+            background-color: blue;
+            font: normal 15pt time new roman;
+            color: white;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: greenyellow;
+        }
+        h3{
+            color: gold;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>

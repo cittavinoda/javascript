@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - ex12.1.3</title>
+</head>
+<body>
+    <h1>Exercício 12.1.3</h1>
+    <hr>
+    <h2>Condição Composta (if else)</h2>
+    <hr>
+    <h3>Maior ou Menor de Idade!</h3>
+
+    <p>Ano do Seu nascimento:</p><input type="number" name="txtnasc" id="txtnasc">
+    <p></p>
+    <p>Ano atual:</p> <input type="number" name="txtano" id="txtano">
+    
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var nasc = document.querySelector('input#txtnasc')
+            var ano = document.querySelector('input#txtano')
+            var res = document.querySelector('div#res')
+            var nascim = Number(nasc.value)
+            var aAtual = Number(ano.value)
+            res.innerHTML=`Você nasceu em ${nascim} e estamos agora em ${aAtual}<br>`
+            var idade = aAtual - nascim
+            res.innerHTML+=`Você tem ${idade} anos.<br>`
+            if(idade < 18){
+                res.innerHTML+='Você é menor de idade.<br>'
+            }else{
+                res.innerHTML+='Você é maior de idade.'
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: darkorange;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            background-color: brown;
+            color: white;
+        }
+        div#res{
+            margin-top: 20px;
+            background-color: blue;
+            font-weight: bold;
+            font-size: large;
+            color: white;
+        }
+        p{
+            font-weight: bold;
+            font-size: 15pt;
+        }
+        input{
+            width: 70px;
+        }
+    </style>    
+</body>
+</html>

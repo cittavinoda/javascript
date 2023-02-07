@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 - ex12.2</title>
+</head>
+<body>
+     <h1>Exercício 11.2</h1>
+     <hr>
+     <h2>Condição Aninhada - if else-if - else</h2>
+     <hr>
+     <h3>Quem vai votar! Quem pode votar!</h3>
+     <script>
+        var idade = 66
+        document.write(`Você tem ${idade} anos. <br><p></p>`)
+
+        if(idade < 16){
+            document.write('Você não pode votar.')
+        }else if(idade < 18 || idade > 65){
+            document.write('Você pode votar, mas não tem obrigatoridade.')
+        }else{
+            document.write('Você é obrigado a votar.')
+        }
+     </script>
+     <style>
+        body{
+            background-color: aquamarine;
+            font: normal 18px time new roman;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 10px 10px 15px blue;
+        }
+        h2{
+            text-align: center;
+            text-shadow: 15px 15px 20px red;
+        }
+     </style>
+</body>
+</html>

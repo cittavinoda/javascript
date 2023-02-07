@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - ex9.6</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            color: brown;
+        }
+        body{
+            background-color: blue;
+        }
+    </style>
+    <h1>Exercício 9.6</h1>
+    <h2>Introdução ao DOM</h2>
+    <h3>Seleção de Elemento por ID</h3>
+    <h3>getElementById()</h3>
+    <P>Estudando DOM.</P>
+    <p>Selecionando Elementos Pelo Js</p>
+    <div id="msg">Selecionando Elementos por Id</div>
+    
+    <script>
+        var corpo = window.document.body
+        var d = window.document.getElementById('msg')
+        d.style.background='green'
+        d.style.color='white'
+        d.innerText = ('Estou estudando...')
+
+    </script>
+    
+</body>
+</html>

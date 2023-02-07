@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 - ex8.3</title>
+</head>
+<body>
+    <h1>Exercício 8.3</h1>
+    <h2>Operadores JavaScript - Parte 2</h2>
+    <p>Os operadores em JavaScript são:<br/>
+        <p>
+        Aritméticos;<br/>
+        Atribuição;<br/>
+        Relacionais;<br/>
+        <strong>Lógico;</strong><br/>
+        Ternário.
+        </p>
+    </p>
+    <style>
+        body{
+            background-color: rgb(16, 82, 4);
+            color: rgb(250, 250, 245);
+        }
+        p {
+            color: rgb(166, 166, 245);
+            font-size: inherit;
+        }
+    </style>
+    
+    <h3>Operadores Lógicos</h3>
+    <p></p>
+    (!) Exclamação - "Não" - Operador lógico de Negação.<br/>
+    (&&) Ê comercial - "E" - Operador lógico de Conjunção. <br/>
+    (||) 2 Pipes - "OU" - Operador lógico de Disjunção.
+   
+    <p>Caso 1 - &&</p>
+
+    <p>
+        true && true = true; <br/>
+        true && false = false; <br/>
+        false && true = false; <br/>
+        false && false = false; <br/>
+    </p>
+    
+    <script>
+        var a = 8; document.write('var a = 8 <br/>')
+        var b = 3; document.write('var b = 3 <br/>')
+        d = a > b && b % 2 == 1; document.write(`d = a > b && b % 2 == 1 : ${d} <br/>`)
+        d1 = a > b && b % 2 == 0; document.write(`d1 = a > b && a % b == 0 : ${d1}<br/>`)
+        d2 = a < d && a != b; document.write(`d2 = a < b && a != b : ${d2}<br/>`)
+        d3 = a < b && a == b; document.write(`d3 = a < b && a == b : ${d3}`)
+    </script>
+
+    <p>Caso 2 - ||</p>
+
+    <p>
+        true || true = true; <br/>
+        true || false = true; <br/>
+        false || true = true; <br/>
+        false || false = false; <br/>
+    </p>
+
+    <script>
+        var a = 8; document.write('var a = 8 <br/>')
+        var b = 3; document.write('var b = 3 <br/>')
+        d = a > b || b % 2 == 1; document.write(`d = a > b || b % 2 == 1 : ${d} <br/>`)
+        d1 = a > b || b % 2 == 0; document.write(`d1 = a > b || a % b == 0 : ${d1}<br/>`)
+        d2 = a < d || a != b; document.write(`d2 = a < b || a != b : ${d2}<br/>`)
+        d3 = a < b || a == b; document.write(`d3 = a < b || a == b : ${d3}`)
+    </script>
+    
+</body>
+</html>

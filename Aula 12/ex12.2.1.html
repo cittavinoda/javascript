@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.2.1</title>
+</head>
+<body>
+    <h1>Exercício ex12.2.1</h1>
+    <hr>
+    <h2>Condição Aninhada (if else-if if)</h2>
+    <hr>
+    <h3>Quem vai votar! Quem pode votar!</h3>
+    <p></p>
+    <p>Digite a sua idade:</p><input type="number" name="txtid" id="txtid">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var id = document.querySelector('input#txtid')
+            var res = document.querySelector('div#res')
+            var idade = Number(id.value)
+            res.innerHTML=`Você tem ${idade} anos.<br>`
+
+            if(idade < 16 ){
+                res.innerHTML+='Você não pode votar!'
+            }else if(idade < 18 || idade > 65){
+                res.innerHTML+='Você pode votar, mas seu voto não é obrigatório.'
+            }else{
+                res.innerHTML+='Seu voto é obrigatório.'
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: purple;
+            color: yellow;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        input{
+            width: 75px;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - ex11.6.2</title>
+</head>
+<body>
+    <h1>Exercício 11.6.2</h1>
+    <hr>
+    <h2>Condição Composta if else-if else 2</h2>
+    <h3>Você Pode Dirigir?</h3>
+    <p>Informe a sua idade:</p><input type="number" name="txtid" id="txtid">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var habilitação = false
+            var id = document.querySelector('input#txtid')
+            var res = document.querySelector('div#res')
+            var idade = Number(id.value)
+            res.innerHTML=`Você tem ${idade} anos.<br>`
+
+            if(idade < 18){
+                res.innerHTML+='Você é menor de idade. Não pode dirigir.'
+            }else if(idade >= 18 && habilitação==false){
+                res.innerHTML+='Você é maior de idade, mas não é habilitado.<br>'
+                res.innerHTML+='Você pode tirar a sua habilitação.<br>Você não pode dirigir.'
+            }else if(idade >=18 && habilitação==true){
+                res.innerHTML+='Você é maior de idade e está habilitado.<br>'
+                res.innerHTML+='Você pode dirigir.'
+            }
+
+        }
+    </script>
+    <style>
+        input{
+            width: 75px;
+            background-color: gold;
+        }
+        body{
+            background-color: olive;
+            font: normal 15pt time new roman;
+        }
+        h1{
+            text-align: center;
+            color: yellow;
+        }
+        h2{
+            text-align: center;
+            color: yellowgreen;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - ex9.8</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(230, 14, 14);
+        }
+        h2{
+            text-align: center;
+            color: rgb(19, 2, 86);
+        }
+        body{
+            background-color: rgb(65, 141, 72);
+        }
+    </style>
+    <h1>Exercício 9.8</h1>
+    <h2>Introdução ao DOM</h2>
+    <h3>Seleção de Elemento por Classe</h3>
+    <h3>getElementByClassName()</h3>
+    <P>Estudando DOM.</P>
+    <p>Selecionando Elementos Pelo Js</p>
+    <div class="msg">Selecionando Elementos por Classe</div>
+    
+    
+    <script>
+        var corpo = window.document.body
+        var d = window.document.getElementsByClassName('msg')[0]
+        d.style.background='blue'
+        d.style.color='white'
+        d.innerText = ('Estou estudando...')
+        var d = window.document.getElementsByTagName('p')[1]
+        d.style.background='red'
+        d.style.color='white'
+
+    </script>
+    
+</body>
+</html>
